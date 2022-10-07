@@ -42,9 +42,9 @@ print("My guess is 2")
 
 # try looping to print
 x = 1.1
-print((x ** 2 - 1) / (x - 1))
+print((x**2 - 1) / (x - 1))
 for _ in range(7):
     x = float(str(x).replace(".", ".0"))
-    print((x ** 2 - 1) / (x - 1))
+    print((x**2 - 1) / (x - 1))
 
 print("\nMy guess was alright")

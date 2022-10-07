@@ -15,7 +15,7 @@ a = float(input("Please enter the coefficient A: "))
 b = float(input("Please enter the coefficient B: "))
 c = float(input("Please enter the coefficient C: "))
 
-discriminant = b ** 2 - 4 * a * c
+discriminant = b**2 - 4 * a * c
 if a == 0:
     # if a and b are both 0 then c has to be 0
     # if just a then root = -c / b
@@ -29,7 +29,13 @@ if a == 0:
 elif discriminant > 0:
     # if the discriminant is greater than 0 then the roots
     # are real and are different
-    roots = sorted([(-b + math.sqrt(discriminant)) / (2 * a), (-b - math.sqrt(discriminant)) / (2 * a)], reverse=True)
+    roots = sorted(
+        [
+            (-b + math.sqrt(discriminant)) / (2 * a),
+            (-b - math.sqrt(discriminant)) / (2 * a),
+        ],
+        reverse=True,
+    )
     print(f"The roots are x = {roots[0]} and x = {roots[1]}")
 elif discriminant < 0:
     # if the discriminant is less than 0 then there

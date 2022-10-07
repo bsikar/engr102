@@ -30,23 +30,23 @@ Calculate the pressure of 5 moles of an ideal gas with a volume of 0.25 m^3, and
 # import math
 import math
 
-mass = 3                        # in kg
-acceleration = 5.5              # in m/s^2
+mass = 3  # in kg
+acceleration = 5.5  # in m/s^2
 force = mass * acceleration
 
-distance = 0.025                # in nm
-angle = 25                      # in degrees
+distance = 0.025  # in nm
+angle = 25  # in degrees
 wavelength = 2 * distance * math.sin(math.radians(angle))
 
-days_left = 3       # in days
-inital_amount = 5   # in g
-half_life = 3.8     # in days
-radon_222 = (inital_amount * 2 ** (-days_left / half_life))
+days_left = 3  # in days
+inital_amount = 5  # in g
+half_life = 3.8  # in days
+radon_222 = inital_amount * 2 ** (-days_left / half_life)
 
 moles = 5
-volume = 0.25               # in m^3
-temperature = 415           # in K
-gas_constant = 8.314        # in J mol^-1 K^−1
+volume = 0.25  # in m^3
+temperature = 415  # in K
+gas_constant = 8.314  # in J mol^-1 K^−1
 pressure = (moles * gas_constant * temperature) / volume / 1000
 
 print(f"Force is {force} N")

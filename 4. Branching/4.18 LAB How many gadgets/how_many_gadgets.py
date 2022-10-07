@@ -17,12 +17,19 @@
 # Rules: cannot use loops
 # Soo.. use recursion :)
 
+
 def get_gadgets(day: int) -> int:
-    if day <= 10: return 5 * day
-    if day <= 60: return 50 + get_gadgets(day - 1)
-    if day <= 100: return 110 - day + get_gadgets(day - 1)
+    if day <= 10:
+        return 5 * day
+    if day <= 60:
+        return 50 + get_gadgets(day - 1)
+    if day <= 100:
+        return 110 - day + get_gadgets(day - 1)
     return get_gadgets(day - 1)
 
+
 day = int(input("Please enter a positive value for day: "))
-if day < 0: print("You entered an invalid number!")
-else: print(f"The total number of gadgets produced on day {day} is {get_gadgets(day)}")
+if day < 0:
+    print("You entered an invalid number!")
+else:
+    print(f"The total number of gadgets produced on day {day} is {get_gadgets(day)}")

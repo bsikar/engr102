@@ -17,10 +17,10 @@ def printresult(shape, side, area):
 
 
 side_length = float(input("Please enter the side length: "))
-triangle = math.sqrt(3) / 4 * side_length ** 2
-square = side_length ** 2
-pentagon = 1 / 4 * math.sqrt(5 * (5 + 2 * math.sqrt(5))) * side_length ** 2
-dodecagon = 3 * (2 + math.sqrt(3)) * side_length ** 2
+triangle = math.sqrt(3) / 4 * side_length**2
+square = side_length**2
+pentagon = 1 / 4 * math.sqrt(5 * (5 + 2 * math.sqrt(5))) * side_length**2
+dodecagon = 3 * (2 + math.sqrt(3)) * side_length**2
 
 printresult("triangle", side_length, triangle)
 printresult("square", side_length, square)

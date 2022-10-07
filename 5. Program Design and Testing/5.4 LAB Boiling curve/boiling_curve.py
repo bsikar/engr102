@@ -19,14 +19,15 @@ excess_temperature = float(input("Enter the excess temperature: "))
 points = [
     (1.3, 1000),
     (5, 7000),
-    (30, 1.5 * 10 ** 6),
-    (120, 2.5 * 10 ** 4),
-    (1200, 1.5 * 10 ** 6),
+    (30, 1.5 * 10**6),
+    (120, 2.5 * 10**4),
+    (1200, 1.5 * 10**6),
 ]
 
 # this function will be used in the get_equation function
 def get_slope(po, p1):
     return log10(p1[1] / po[1]) / log10(p1[0] / po[0])
+
 
 # this function will actually return the y value on the line
 # by using the x value provided from the user (excess_temperature)
@@ -38,6 +39,7 @@ def get_equation(x):
     # point 'e' should never be the i
     (xo, yo), point_right = points[xo], points[xo + 1]
     return yo * (x / xo) ** get_slope((xo, yo), point_right)
+
 
 # we need to check the bounds of the user input
 # if the user entered excess_temperature was out of the

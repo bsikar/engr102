@@ -12,7 +12,7 @@
 input1 = float(input("Enter number 1: "))
 input2 = float(input("Enter number 2: "))
 input3 = float(input("Enter number 3: "))
-#print(f"The largest number is {max(input1, max(input2, input3)):.1f}")
+# print(f"The largest number is {max(input1, max(input2, input3)):.1f}")
 largest = input1
 if input1 < input2 < input3:
     larget = input3

@@ -26,15 +26,16 @@ z_final = float(input("Enter the z position of the object at time 2: "))
 step = (time_final - time_initial) / 4
 times = [time_initial + x * step for x in range(5)]
 
+
 def linear_interpolation(distance_initial: int, distance_final: int, time: int) -> int:
     slope = (distance_final - distance_initial) / (time_final - time_initial)
     distance = slope * (time - time_initial) + distance_initial
 
     return distance
 
+
 for t in times:
     x = linear_interpolation(x_initial, x_final, t)
     y = linear_interpolation(y_initial, y_final, t)
     z = linear_interpolation(z_initial, z_final, t)
-    print(f"At time {t:.2f} seconds the object is at ({x:.3f}, {y:.3f}, {z:.3f})");
-
+    print(f"At time {t:.2f} seconds the object is at ({x:.3f}, {y:.3f}, {z:.3f})")

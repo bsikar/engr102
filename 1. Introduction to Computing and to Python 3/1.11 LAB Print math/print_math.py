@@ -32,7 +32,7 @@ import math
 
 force = 3 * 5.5
 wavelength = 2 * 0.025 * math.sin(math.radians(25))
-radon_222 = (5 * 2 ** (-3 / 3.8))
+radon_222 = 5 * 2 ** (-3 / 3.8)
 pressure = (5 * 8.314 * 415) / 0.25 / 1000
 
 print(f"Force is {force} N")

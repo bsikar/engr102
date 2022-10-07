@@ -24,19 +24,23 @@ print(f"You received ${(pay - cost):.2f} in change. That is...")
 
 num_quarter = change // quarter
 amount = quarter * num_quarter
-if amount > 0: change -= amount
+if amount > 0:
+    change -= amount
 
 num_dime = change // dime
 amount = dime * num_dime
-if amount > 0: change -= amount
+if amount > 0:
+    change -= amount
 
 num_nickel = change // nickel
 amount = nickel * num_nickel
-if amount > 0: change -= amount
+if amount > 0:
+    change -= amount
 
 num_penny = change // penny
 amount = penny * num_penny
-if amount > 0: change -= amount
+if amount > 0:
+    change -= amount
 
 # checking if we should print the 's'
 if num_quarter > 1:

@@ -14,11 +14,11 @@
 
 import math
 
-time_inital = 10 # in minutes
-time_final = time_inital + 45 # in minutes
-distance_inital = 2026 # in kilometers
-distance_final = 23_026 # in kilometers
-iss_orbit_radius = 6_745 # in kilometers
+time_inital = 10  # in minutes
+time_final = time_inital + 45  # in minutes
+distance_inital = 2026  # in kilometers
+distance_final = 23_026  # in kilometers
+iss_orbit_radius = 6_745  # in kilometers
 
 """
 Instructions
@@ -40,6 +40,7 @@ minutes.)
 
 # Part 1
 
+
 def linear_interpolation(time: int) -> int:
     # the x-axis is time
     # the y-axis is position
@@ -50,11 +51,15 @@ def linear_interpolation(time: int) -> int:
 
     return distance
 
-time = 25 # in minutes
+
+time = 25  # in minutes
 print("Part 1:")
-print(f"For t = {time} minutes, the position p = {linear_interpolation(time)} kilometers")
+print(
+    f"For t = {time} minutes, the position p = {linear_interpolation(time)} kilometers"
+)
 
-time = 300 # in minutes
+time = 300  # in minutes
 print("Part 2:")
-print(f"For t = {time} minutes, the position p = {linear_interpolation(time)} kilometers")
-
+print(
+    f"For t = {time} minutes, the position p = {linear_interpolation(time)} kilometers"
+)
